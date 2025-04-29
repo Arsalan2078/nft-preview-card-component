@@ -40,7 +40,7 @@ body {
 
 .heading {
   font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-400);
+  font-weight: var(--font-weight-600);
   line-height: normal;
 }
 
@@ -54,4 +54,13 @@ body {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-600);
   line-height: normal;
+}
+
+a {
+  color: var(--color-white);
+
+  &:hover,
+  &:focus {
+    color: var(--color-cyan);
+  }
 }
