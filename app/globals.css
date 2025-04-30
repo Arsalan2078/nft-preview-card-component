@@ -28,7 +28,7 @@
   --font-size-*: initial;
   --font-size-lg: 1.375rem;
   --font-size-rg: 1.125rem;
-  --font-size-sm: clamp(0.9375rem, 0.75rem + 0.7813vw, 1.125rem);
+  --font-size-sm: clamp(0.9375rem, 0.875rem + 0.2604vw, 1rem);
 }
 
 body {
@@ -57,10 +57,10 @@ body {
 }
 
 a {
-  color: var(--color-white);
+  @apply text-white transition duration-150 ease-out;
 
   &:hover,
   &:focus {
-    color: var(--color-cyan);
+    @apply text-cyan;
   }
 }
