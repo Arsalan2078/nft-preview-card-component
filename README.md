@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/Arsalan2078/nft-preview-card-component.git)
-- Live Site URL: [Add live site URL here](https://nft-preview-card-component-7sdrjjgl9.vercel.app/)
+- Live Site URL: [Add live site URL here](https://nft-preview-card-component-beige-eight.vercel.app/)
 
 ## My process
 
