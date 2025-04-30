@@ -1,16 +1,16 @@
 import iconClock from "@/public/icon-clock.svg";
 import iconEthereum from "@/public/icon-ethereum.svg";
-import iconView from "@/public/icon-view.svg";
 
 import Image from "next/image";
+import NftImage from "./NftImage";
 
-interface imageProps {
+export interface NftImageProps {
   src: string;
   alt: string;
 }
 
 export interface NftPreviewCardProps {
-  image: imageProps;
+  image: NftImageProps;
   title: {
     text: string;
     link: string;
@@ -19,7 +19,7 @@ export interface NftPreviewCardProps {
   price: string;
   timeLeft: string;
   author: {
-    image: imageProps;
+    image: NftImageProps;
     name: string;
     link: string;
   };
@@ -35,7 +35,7 @@ export default function NftPreviewCard({
 }: NftPreviewCardProps) {
   return (
     <div className="bg-very-dark-blue-card-bg rounded-[0.9375rem] p-[1.5rem] w-full max-w-[21.875rem] m-[1.5rem] flex flex-col gap-[1.5rem]">
-      <img src={image.src} alt={image.alt} className="rounded-[0.5rem]" />
+      <NftImage src={image.src} alt={image.alt} />
 
       <div className="flex flex-col gap-[1rem]">
         <div className="flex flex-col gap-[0.75rem]">

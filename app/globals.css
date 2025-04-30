@@ -10,12 +10,12 @@
   --breakpoint-xl: 80rem;
 
   --color-*: initial;
-  --color-soft-blue: rgb(139, 172, 218);
-  --color-cyan: rgb(0, 255, 247);
-  --color-very-dark-blue-main-bg: hsl(217, 54%, 11%);
-  --color-very-dark-blue-card-bg: hsl(216, 50%, 16%);
-  --color-very-dark-blue-line: hsl(215, 32%, 27%);
-  --color-white: hsl(0, 0%, 100%);
+  --color-soft-blue: rgba(139, 172, 218, 1);
+  --color-cyan: rgba(0, 255, 247, 1);
+  --color-very-dark-blue-main-bg: rgba(13, 25, 43, 1);
+  --color-very-dark-blue-card-bg: rgba(20, 37, 61, 1);
+  --color-very-dark-blue-line: rgba(47, 65, 91, 1);
+  --color-white: rgba(255, 255, 255, 1);
 
   --font-*: initial;
   --font-outfit: var(--font-outfit);
