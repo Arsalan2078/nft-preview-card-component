@@ -25,35 +25,30 @@
   --font-weight-400: 400;
   --font-weight-600: 600;
 
-  --font-size-*: initial;
-  --font-size-lg: 1.375rem;
-  --font-size-rg: 1.125rem;
-  --font-size-sm: clamp(0.9375rem, 0.875rem + 0.2604vw, 1rem);
+  --text-*: initial;
+  --text-lg: 1.375rem;
+  --text-rg: 1.125rem;
+  --text-sm: clamp(0.9375rem, 0.875rem + 0.2604vw, 1rem);
+
+  --leading-*: initial;
+  --leading-body: 1.625rem;
+  --leading-normal: normal;
 }
 
 body {
-  font-family: var(--font-outfit);
-  font-size: var(--font-size-rg);
-  font-weight: var(--font-weight-300);
-  line-height: 1.625rem;
+  @apply font-outfit text-rg font-300 leading-body;
 }
 
 .heading {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-600);
-  line-height: normal;
+  @apply text-lg font-600 leading-normal;
 }
 
 .caption {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-400);
-  line-height: normal;
+  @apply text-sm font-400 leading-normal;
 }
 
 .caption-bold {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-600);
-  line-height: normal;
+  @apply text-sm font-600 leading-normal;
 }
 
 a {
