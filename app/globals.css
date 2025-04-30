@@ -1,26 +1,61 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  font-size: 16px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-md: 48rem;
+  --breakpoint-xl: 80rem;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-*: initial;
+  --color-soft-blue: rgba(139, 172, 218, 1);
+  --color-cyan: rgba(0, 255, 247, 1);
+  --color-very-dark-blue-main-bg: rgba(13, 25, 43, 1);
+  --color-very-dark-blue-card-bg: rgba(20, 37, 61, 1);
+  --color-very-dark-blue-line: rgba(47, 65, 91, 1);
+  --color-white: rgba(255, 255, 255, 1);
+
+  --font-*: initial;
+  --font-outfit: var(--font-outfit);
+
+  --font-weight-*: initial;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-600: 600;
+
+  --text-*: initial;
+  --text-lg: 1.375rem;
+  --text-rg: 1.125rem;
+  --text-sm: clamp(0.9375rem, 0.875rem + 0.2604vw, 1rem);
+
+  --leading-*: initial;
+  --leading-body: 1.625rem;
+  --leading-normal: normal;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply font-outfit text-rg font-300 leading-body;
+}
+
+.heading {
+  @apply text-lg font-600 leading-normal;
+}
+
+.caption {
+  @apply text-sm font-400 leading-normal;
+}
+
+.caption-bold {
+  @apply text-sm font-600 leading-normal;
+}
+
+a {
+  @apply text-white transition duration-150 ease-out;
+
+  &:hover,
+  &:focus {
+    @apply text-cyan;
+  }
 }
